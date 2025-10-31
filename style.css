@@ -31,11 +31,6 @@ main>div{
   justify-content: center;
 }
 
-#scene-1-container:first-child{
-  height: 40%;
-  background-color: orange;
-}
-
 footer, header{
   display: flex;
   justify-content: center;
@@ -59,6 +54,58 @@ footer, header{
 .item img{
   width: 100%;
 }
+
+.img-container{
+  width: 100px;
+}
+
+  .img-container>img{
+    width: 100%;
+  }
+
+#scene-1-container{
+  width: 100%;
+}
+
+.row-1, .row-2, .row-3{
+  padding: 32px;
+  background: var(--primary-color);
+}
+
+.row-1{
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--secondary-color);
+}
+
+.row-2{
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+}
+
+  .row-2:nth-child(3), .row-2:nth-child(4){
+    grid-row-start: 2;
+  }
+
+  .stats{
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.row-3{
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 @media (width < 640px) {
   #inventory-container{
